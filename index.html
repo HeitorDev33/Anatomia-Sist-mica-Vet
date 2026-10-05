@@ -12,39 +12,45 @@
             <h2>Anatomia Sistêmica Veterinária</h2>
         </header>
 
-        <div class="filtros">
-            <div class="filtro-grupo">
-                <label for="filtro-animal">Animal:</label>
-                <select id="filtro-animal">
-                    <option value="">Selecione o Animal...</option>
-                    <option value="Cachorro">Cachorro</option>
-                    <option value="Gato">Gato</option>
-                    <option value="Bovino">Bovino</option>
-                    <option value="Ovino">Ovino</option>
-                    <option value="Caprino">Caprino</option>
-                    <option value="Suíno">Suíno</option>
-                    <option value="Equino">Equino</option>
-                    <option value="Aves">Aves</option>
-                </select>
+        <!-- Filtros e Botão de Ação -->
+        <div class="filtros-container">
+            <div class="filtros">
+                <div class="filtro-grupo">
+                    <label for="filtro-animal">Animal:</label>
+                    <select id="filtro-animal">
+                        <option value="">Selecione o Animal...</option>
+                        <option value="Cachorro">Cachorro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Bovino">Bovino</option>
+                        <option value="Ovino">Ovino</option>
+                        <option value="Caprino">Caprino</option>
+                        <option value="Suíno">Suíno</option>
+                        <option value="Equino">Equino</option>
+                        <option value="Aves">Aves</option>
+                    </select>
+                </div>
+                <div class="filtro-grupo">
+                    <label for="filtro-sistema">Sistema:</label>
+                    <select id="filtro-sistema">
+                        <option value="">Selecione o Sistema...</option>
+                        <option value="Esplancnologia">Esplancnologia (Visceras Geral)</option>
+                        <option value="Sistema circulatório">Sistema circulatório</option>
+                        <option value="Sistema cardiovascular">Sistema cardiovascular</option>
+                        <option value="Sistema porta hepático e circulação vitelínica">Sistema porta hepático / vitelínica</option>
+                        <option value="Sistema linfático">Sistema linfático</option>
+                        <option value="Sistema respiratório">Sistema respiratório</option>
+                        <option value="Sistema digestivo">Sistema digestivo</option>
+                        <option value="Sistema endócrino">Sistema endócrino</option>
+                        <option value="Sistema sensorial">Sistema sensorial</option>
+                        <option value="Sistema urinário">Sistema urinário</option>
+                        <option value="Sistema genital do macho">Sistema genital do macho</option>
+                        <option value="Sistema genital da fêmea">Sistema genital da fêmea</option>
+                    </select>
+                </div>
             </div>
-            <div class="filtro-grupo">
-                <label for="filtro-sistema">Sistema:</label>
-                <select id="filtro-sistema">
-                    <option value="">Selecione o Sistema...</option>
-                    <option value="Esplancnologia">Esplancnologia</option>
-                    <option value="Sistema circulatório">Sistema circulatório</option>
-                    <option value="Sistema cardiovascular">Sistema cardiovascular</option>
-                    <option value="Sistema porta hepático e circulação vitelínica">Sistema porta hepático / vitelínica</option>
-                    <option value="Sistema linfático">Sistema linfático</option>
-                    <option value="Sistema respiratório">Sistema respiratório</option>
-                    <option value="Sistema digestivo">Sistema digestivo</option>
-                    <option value="Sistema endócrino">Sistema endócrino</option>
-                    <option value="Sistema sensorial">Sistema sensorial</option>
-                    <option value="Sistema urinário">Sistema urinário</option>
-                    <option value="Sistema genital do macho">Sistema genital do macho</option>
-                    <option value="Sistema genital da fêmea">Sistema genital da fêmea</option>
-                    <option value="Aves (Sistema)">Aves</option>
-                </select>
+            
+            <div class="btn-container">
+                <button id="btn-carregar" class="btn-principal">Estudar Agora</button>
             </div>
         </div>
 

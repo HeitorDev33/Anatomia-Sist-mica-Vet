@@ -17,7 +17,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -26,10 +26,18 @@ body {
 .top-header { text-align: center; }
 .top-header h2 { color: #ff79c6; font-size: 2.2rem; }
 
+/* Estrutura dos Filtros + Botão */
+.filtros-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    width: 100%;
+}
+
 .filtros {
     display: flex;
-    gap: 20px;
-    width: 100%;
+    gap: 15px;
+    flex: 3;
 }
 
 .filtro-grupo {
@@ -59,18 +67,68 @@ body {
 }
 
 .filtro-grupo select:focus { border-color: #ff79c6; }
+
+.btn-container {
+    flex: 1;
+}
+
+.btn-principal {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff79c6;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #ff92d0;
+    transform: translateY(-2px);
+}
+
 .content { width: 100%; }
 
+/* Painel de Conteúdo */
 .painel-ativo {
     background-color: #27293d;
     padding: 30px;
     border-radius: 12px;
     border: 1px solid #3b3d54;
-    text-align: center;
 }
 
 .painel-ativo h3 {
     color: #ff79c6;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/* Grelha de tópicos da Esplancnologia */
+.esplancno-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.esplancno-card {
+    background-color: #1e1e2f;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #ff79c6;
+}
+
+.esplancno-card h4 {
+    color: #50fa7b;
+    margin-bottom: 8px;
+}
+
+.esplancno-card p {
+    color: #a9a9b3;
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
