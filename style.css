@@ -26,7 +26,6 @@ body {
 .top-header { text-align: center; }
 .top-header h2 { color: #ff79c6; font-size: 2.2rem; }
 
-/* Estrutura dos Filtros + Botão */
 .filtros-container {
     display: flex;
     align-items: flex-end;
@@ -37,7 +36,7 @@ body {
 .filtros {
     display: flex;
     gap: 15px;
-    flex: 3;
+    flex: 2;
 }
 
 .filtro-grupo {
@@ -68,31 +67,51 @@ body {
 
 .filtro-grupo select:focus { border-color: #ff79c6; }
 
+/* Botões Lado a Lado */
 .btn-container {
-    flex: 1;
+    display: flex;
+    gap: 10px;
+    flex: 1.5;
 }
 
-.btn-principal {
-    width: 100%;
+.btn-destaque {
+    flex: 1;
     padding: 12px;
     background-color: #ff79c6;
     color: #1e1e2f;
     border: none;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-destaque:hover {
+    background-color: #ff92d0;
+    transform: translateY(-2px);
+}
+
+.btn-principal {
+    flex: 1;
+    padding: 12px;
+    background-color: #bd93f9;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .btn-principal:hover {
-    background-color: #ff92d0;
+    background-color: #d1b2ff;
     transform: translateY(-2px);
 }
 
 .content { width: 100%; }
 
-/* Painel de Conteúdo */
 .painel-ativo {
     background-color: #27293d;
     padding: 30px;
@@ -107,7 +126,6 @@ body {
     text-align: center;
 }
 
-/* Grelha de tópicos da Esplancnologia */
 .esplancno-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
