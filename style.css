@@ -1,0 +1,51 @@
+/* Ajuste do título para caber melhor */
+.sidebar h2 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+/* Estilo dos Filtros */
+.filtros {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3b3d54;
+}
+
+.filtro-grupo {
+    margin-bottom: 15px;
+}
+
+.filtro-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    color: #a9a9b3;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.filtro-grupo select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    border: 1px solid #3b3d54;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.filtro-grupo select:focus {
+    border-color: #ff79c6; /* Borda rosa quando clica */
+}
+
+/* Caixa de destaque quando um tema é selecionado */
+.painel-ativo {
+    background-color: #27293d;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border: 1px solid #3b3d54;
+}
+.painel-ativo h3 { color: #ff79c6; margin-bottom: 10px; }
