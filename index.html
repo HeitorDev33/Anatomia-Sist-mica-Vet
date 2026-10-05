@@ -8,70 +8,50 @@
 </head>
 <body>
     <div class="container">
-        <!-- Menu Lateral -->
-        <nav class="sidebar">
+        <header class="top-header">
             <h2>Anatomia Sistêmica Veterinária</h2>
-            
-            <!-- Sessão de Filtros -->
-            <div class="filtros">
-                <div class="filtro-grupo">
-                    <label for="filtro-animal">Animal:</label>
-                    <select id="filtro-animal">
-                        <option value="">Selecione o Animal...</option>
-                        <option value="Cachorro">Cachorro</option>
-                        <option value="Gato">Gato</option>
-                        <option value="Bovino">Bovino</option>
-                        <option value="Ovino">Ovino</option>
-                        <option value="Caprino">Caprino</option>
-                        <option value="Suíno">Suíno</option>
-                        <option value="Equino">Equino</option>
-                        <option value="Aves">Aves</option>
-                    </select>
-                </div>
+        </header>
 
-                <div class="filtro-grupo">
-                    <label for="filtro-sistema">Sistema:</label>
-                    <select id="filtro-sistema">
-                        <option value="">Selecione o Sistema...</option>
-                        <option value="Esplancnologia">Esplancnologia</option>
-                        <option value="Sistema circulatório">Sistema circulatório</option>
-                        <option value="Sistema cardiovascular">Sistema cardiovascular</option>
-                        <option value="Sistema porta hepático e circulação vitelínica">Sistema porta hepático / vitelínica</option>
-                        <option value="Sistema linfático">Sistema linfático</option>
-                        <option value="Sistema respiratório">Sistema respiratório</option>
-                        <option value="Sistema digestivo">Sistema digestivo</option>
-                        <option value="Sistema endócrino">Sistema endócrino</option>
-                        <option value="Sistema sensorial">Sistema sensorial</option>
-                        <option value="Sistema urinário">Sistema urinário</option>
-                        <option value="Sistema genital do macho">Sistema genital do macho</option>
-                        <option value="Sistema genital da fêmea">Sistema genital da fêmea</option>
-                        <option value="Aves (Sistema)">Aves</option>
-                    </select>
-                </div>
+        <div class="filtros">
+            <div class="filtro-grupo">
+                <label for="filtro-animal">Animal:</label>
+                <select id="filtro-animal">
+                    <option value="">Selecione o Animal...</option>
+                    <option value="Cachorro">Cachorro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Bovino">Bovino</option>
+                    <option value="Ovino">Ovino</option>
+                    <option value="Caprino">Caprino</option>
+                    <option value="Suíno">Suíno</option>
+                    <option value="Equino">Equino</option>
+                    <option value="Aves">Aves</option>
+                </select>
             </div>
+            <div class="filtro-grupo">
+                <label for="filtro-sistema">Sistema:</label>
+                <select id="filtro-sistema">
+                    <option value="">Selecione o Sistema...</option>
+                    <option value="Esplancnologia">Esplancnologia</option>
+                    <option value="Sistema circulatório">Sistema circulatório</option>
+                    <option value="Sistema cardiovascular">Sistema cardiovascular</option>
+                    <option value="Sistema porta hepático e circulação vitelínica">Sistema porta hepático / vitelínica</option>
+                    <option value="Sistema linfático">Sistema linfático</option>
+                    <option value="Sistema respiratório">Sistema respiratório</option>
+                    <option value="Sistema digestivo">Sistema digestivo</option>
+                    <option value="Sistema endócrino">Sistema endócrino</option>
+                    <option value="Sistema sensorial">Sistema sensorial</option>
+                    <option value="Sistema urinário">Sistema urinário</option>
+                    <option value="Sistema genital do macho">Sistema genital do macho</option>
+                    <option value="Sistema genital da fêmea">Sistema genital da fêmea</option>
+                    <option value="Aves (Sistema)">Aves</option>
+                </select>
+            </div>
+        </div>
 
-            <!-- Ferramentas de Estudo -->
-            <ul>
-                <li><a href="#" id="menu-dashboard">Dashboard</a></li>
-                <li><a href="#" id="menu-pomodoro">Pomodoro</a></li>
-                <li><a href="#" id="menu-flashcards">Flashcards</a></li>
-                <li><a href="#" id="menu-anotacoes">Anotações</a></li>
-            </ul>
-        </nav>
-
-        <!-- Área Principal -->
         <main class="content">
-            <header>
-                <h1>Painel de Estudos</h1>
-                <p>Selecione um animal e um sistema anatômico no menu ao lado.</p>
-            </header>
-            
-            <section id="area-trabalho" class="painel-ativo">
-                <!-- O conteúdo vai aparecer aqui -->
-            </section>
+            <section id="area-trabalho"></section>
         </main>
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>
