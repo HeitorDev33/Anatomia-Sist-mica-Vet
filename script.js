@@ -10,7 +10,7 @@ function atualizarFocoDeEstudo() {
         areaTrabalho.className = 'painel-ativo';
         areaTrabalho.innerHTML = `
             <h3>${sistema} - ${animal}</h3>
-            <p style="color: #a9a9b3;">As informações para este estudo irão aparecer aqui.</p>
+            <p style="color: #8892b0;">As informações para este estudo irão aparecer aqui.</p>
         `;
     } else {
         areaTrabalho.className = '';

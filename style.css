@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #1e1e2f;
+    background-color: #0f111a; /* Fundo preto/chumbo escuro */
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -23,9 +23,24 @@ body {
     gap: 30px;
 }
 
-.top-header { text-align: center; }
-.top-header h2 { color: #ff79c6; font-size: 2.2rem; }
+/* Título e Subtítulo */
+.top-header {
+    text-align: center;
+}
 
+.top-header h2 {
+    color: #00ff88; /* Verde esmeralda brilhante */
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: #8892b0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Filtros */
 .filtros {
     display: flex;
     gap: 20px;
@@ -40,7 +55,7 @@ body {
 
 .filtro-grupo label {
     margin-bottom: 8px;
-    color: #a9a9b3;
+    color: #00ff88;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -49,28 +64,33 @@ body {
     width: 100%;
     padding: 12px;
     border-radius: 8px;
-    background-color: #27293d;
+    background-color: #181b26;
     color: #ffffff;
-    border: 1px solid #3b3d54;
+    border: 1px solid #2a2e3d;
     font-size: 1rem;
     cursor: pointer;
     outline: none;
     transition: 0.3s;
 }
 
-.filtro-grupo select:focus { border-color: #ff79c6; }
+.filtro-grupo select:focus {
+    border-color: #00ff88;
+}
+
 .content { width: 100%; }
 
+/* Painel de Resultados */
 .painel-ativo {
-    background-color: #27293d;
+    background-color: #181b26;
     padding: 30px;
     border-radius: 12px;
-    border: 1px solid #3b3d54;
+    border: 1px solid #2a2e3d;
+    border-left: 4px solid #00ff88;
     text-align: center;
 }
 
 .painel-ativo h3 {
-    color: #ff79c6;
+    color: #00ff88;
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
