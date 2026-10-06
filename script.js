@@ -8,8 +8,21 @@ function atualizarFocoDeEstudo() {
     
     if (animal !== "" && sistema !== "") {
         areaTrabalho.className = 'painel-ativo';
+        
+        let tituloExibicao = "";
+        
+        if (animal === "Esplancnologia" && sistema === "Esplancnologia") {
+            tituloExibicao = "Esplancnologia Geral Comparada";
+        } else if (animal === "Esplancnologia") {
+            tituloExibicao = `${sistema} - Visão Geral (Esplancnologia)`;
+        } else if (sistema === "Esplancnologia") {
+            tituloExibicao = `Esplancnologia (Vísceras) - ${animal}`;
+        } else {
+            tituloExibicao = `${sistema} - ${animal}`;
+        }
+
         areaTrabalho.innerHTML = `
-            <h3>${sistema} - ${animal}</h3>
+            <h3>${tituloExibicao}</h3>
             <p style="color: #8892b0;">As informações para este estudo irão aparecer aqui.</p>
         `;
     } else {
